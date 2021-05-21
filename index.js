@@ -265,7 +265,7 @@ function ScrapUpcoming() {
                     //Add datas into embed fields
                     const productEmbed = new Discord.MessageEmbed()
                         //Set Message Author
-                        .setAuthor(`${process.env.SITE_NAME} (${process.env.CATEGORY_NAME_NEW})`, `${process.env.BRANDING_LOGO}`, `${UpcomingProducts[i].link}`)
+                        .setAuthor(`${process.env.SITE_NAME} (${process.env.CATEGORY_NAME})`, `${process.env.BRANDING_LOGO}`, `${UpcomingProducts[i].link}`)
                         //Set message color
                         .setColor(`${process.env.COLOR}`)
                         //Set message title
@@ -281,7 +281,7 @@ function ScrapUpcoming() {
                             },
                             { 
                                 name: 'Category:', 
-                                value: `${process.env.CATEGORY_NAME_NEW}`, 
+                                value: `${process.env.CATEGORY_NAME}`, 
                                 inline:true 
                             },
                             { 
